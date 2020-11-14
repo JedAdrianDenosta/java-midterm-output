@@ -50,7 +50,7 @@ public class midtermExam {
 	public static void getEntry() {
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("-----Add an Information-----");
+		System.out.println("\n-----Add an Information-----");
 
 		System.out.print("Enter Name: ");
 		String addName = scan.nextLine();
@@ -71,23 +71,22 @@ public class midtermExam {
 
 		System.out.println("\n-----Delete an information-----");
 
-			System.out.print("Enter the name you want to delete: ");
-			String delete = scan.nextLine();
+		System.out.print("Enter the name you want to delete: ");
+		String delete = scan.nextLine();
 
-			String index = age.get(name.indexOf(delete));
+		String index = age.get(name.indexOf(delete));
 
-			for (String element : name) {
-				if (element.contains(delete)) {
-					foundNum = true;
-				}
+		for (String element : name) {
+			if (element.contains(delete)) {
+				foundNum = true;
 			}
-			if (foundNum) {
-				name.remove(delete);
-				age.remove(index);
-				System.out.println(delete + " has been successfuly deleted");
-			} else {
-				System.out.println("No " + delete + " found in the list");
-			}
+		}
+		if (foundNum) {
+			name.remove(delete);
+			age.remove(index);
+			System.out.println(delete + " has been successfuly deleted");
+		} else {
+			System.out.println("No " + delete + " found in the list");
 		}
 	}
 
