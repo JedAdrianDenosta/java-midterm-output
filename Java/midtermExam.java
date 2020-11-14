@@ -71,12 +71,6 @@ public class midtermExam {
 
 		System.out.println("\n-----Delete an information-----");
 
-		System.out.println("Choices: ");
-		int i = 0;
-		for (; i < name.size(); i++) {
-			System.out.println((i + 1) + ".The Name is " + name.get(i)
-					+ " and the Age is " + age.get(i));
-
 			System.out.print("Enter the name you want to delete: ");
 			String delete = scan.nextLine();
 
